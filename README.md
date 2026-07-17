@@ -207,7 +207,6 @@ Enter the required patient information when prompted.
 - Flask/FastAPI REST API
 - Docker Deployment
 - Cloud Deployment
-- 
 ---
 
 ## 👨‍💻 Author
