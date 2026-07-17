@@ -58,7 +58,6 @@ The following preprocessing techniques were applied:
 Performed:
 
 - Distribution Analysis
-- Correlation Heatmap
 - Boxplots
 - Histograms
 - Missing Value Analysis
