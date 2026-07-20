@@ -1,4 +1,4 @@
-from config import *
+from config_copy import *
 from pathlib import Path
 import time
 
@@ -25,11 +25,11 @@ class Prediciting_system:
         print(model_proba)
         
         if model_pred[0] == 1:
-            print('Prediction Higer likelihood of Diabetes')
-            print('Probabilty is :',round(model_proba[0][1] * 100))
+            print('\nPrediction Higer likelihood of Diabetes')
+            print('\nProbabilty is :',round(model_proba[0][1] * 100))
         
         else:
-            print('Prediction Lower likelihood of Diabetes')
+            print('\nPrediction Lower likelihood of Diabetes')
             print('Probabilty is :', round(model_proba[0][0] * 100))
             
         
@@ -79,9 +79,9 @@ if __name__=='__main__':
             callsystem = Prediciting_system(user_df) # calling the predicting system
             
             time.sleep(2)
-            print('calling the Predicting system')
+            print('\ncalling the Predicting system')
             callsystem.make_predict() # calling method of predicting system
             
             time.sleep(1)
-            print('model stopped!')     # finished
+            print('\nfinished!')     # finished
             break
