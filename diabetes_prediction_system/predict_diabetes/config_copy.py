@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from mpl_toolkits.mplot3d import Axes3D
+
+#sklearn dependancies
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score,classification_report, confusion_matrix
+
+#job
+import joblib
+
+# reload
+import importlib
