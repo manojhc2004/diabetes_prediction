@@ -1,49 +1,59 @@
-from diabetes_prediction_system.config import *
+from config import *
 
 class Univariate_Analysis:
     
-    def __init__(self,df,col):
+    def __init__(self,df):
         self.df = df
-        self.col = col
-        self.skewness = self.df[self.col].skew()
+        #self.col = col
+        #self.skewness = self.df[self.col].skew()
     
-    def describe(self):
+    def describe(self,col):
         
-        des = self.df[self.col].describe()
+        print(f"{col} describe")
+        des = self.df[col].describe()
+        print("skewness :",self.df[col].skew())
         return des
     
-    def missing_na_(self):
+    def missing_na_(self,col):
         
-        missing = self.df[self.col].isna().sum()
+        missing = self.df[col].isna().sum()
         #return missing
         if missing > 0:
-            return(f'there is missing values in the column of {self.col}')
+            return(f'there is missing values in the column of {col}')
         
-        return 'is there missing values'
+        return 'there is no missing values'
+
+    def kdeplot(self,col):
+        
+        plt.figure(figsize=(7,5))
+        sns.kdeplot(
+            data=self.df,
+            x=self.df[col],
+            hue='Outcome',
+            fill=True,
+            alpha=0.4,
+            common_norm=False
+        )
+        plt.title(f"{col} distribution by Outcome")
+        plt.xlabel(f"{col}")
+        plt.ylabel('density')
+        plt.legend(["None-diabetic","diabetic"])
+        plt.show()
+        
     
-    def dist_plot(self):
+    def hist_plot(self,col):
         
-        
-        print('skewness is :',self.skewness)
-        
-        plt.figure(figsize=(6,4))
-        sns.displot(x=self.df[self.col])
-        plt.title(f'Distribuion plot of:{self.col}')
+    
+        plt.figure(figsize=(7,5))
+        sns.histplot(data= self.df,
+                     x=self.df[col])
+        plt.title(f'histo plot of:{col}')
         plt.show()
 
-    
-    def hist_plot(self):
-        
-        print('skewness is :',self.skewness)
-        plt.figure(figsize=(6,4))
-        sns.displot(x=self.df[self.col])
-        plt.title(f'Distribuion plot of:{self.col}')
-        plt.show()
-
-    def outlier(self):
+    def outlier(self,col):
         
         plt.figure(figsize=(6,4))
-        sns.boxplot(self.df[self.col])
-        plt.ylabel(self.col)
-        plt.title(f'Outlier of plot {self.col}')
+        sns.boxplot(self.df[col])
+        plt.ylabel(col)
+        plt.title(f'Outlier of plot {col}')
         plt.show()
