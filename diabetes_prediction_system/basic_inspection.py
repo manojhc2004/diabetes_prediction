@@ -1,4 +1,4 @@
-from diabetes_prediction_system.config import *
+import config
 
 class Basics:
     
