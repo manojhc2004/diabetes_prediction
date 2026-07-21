@@ -57,18 +57,18 @@ The following preprocessing techniques were applied:
 
 Performed:
 
- **Distribution Analysis**
-- 
+- Univariate Analysis/Data Distribution
+![Age distribution](diabetes_prediction_system/visualization/data_distribution/age_histo.png)
 
-![My Project Screenshot](diabetes_prediction_system/visualization/bivariate/bloodpressure_vs_age.png) 
+- Bivariate Analysis
+![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
 
+- Target Analysis
+![diabetes patients by Age](diabetes_prediction_system/visualization/target_analysis/distribution_of_diabetes_patients_by_Age.png)
 
-- Boxplots
-- Histograms
-- Missing Value Analysis
-- Outlier Analysis
+- density by outcome
+![Insulin distribution density by outcome](diabetes_prediction_system/visualization/density_by_outcome/insulin_distribution_density_by_outcome.png)
 
----
 
 ## 🤖 Machine Learning Models Used
 
