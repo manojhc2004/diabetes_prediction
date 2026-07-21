@@ -59,7 +59,9 @@ Performed:
 
  **Distribution Analysis**
 - 
-![Age Distribution](visualizations/data_distribution/age_histo.png)
+
+![My Project Screenshot](diabetes_prediction_system/visualization/bivariate/bloodpressure_vs_age.png) 
+
 
 - Boxplots
 - Histograms
