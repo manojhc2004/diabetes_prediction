@@ -59,7 +59,7 @@ Performed:
 
  **Distribution Analysis**
 - 
-![Age Distribution](diabetes_prediction_system/visualizations/data_distribution/age_histo.png)
+![Age Distribution](visualizations/data_distribution/age_histo.png)
 
 - Boxplots
 - Histograms
