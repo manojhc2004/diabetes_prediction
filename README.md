@@ -59,6 +59,8 @@ Performed:
 
 
 - Univariate Analysis/Data Distribution
+
+  
 ![Age distribution](diabetes_prediction_system/visualization/data_distribution/age_histo.png)
 
 
