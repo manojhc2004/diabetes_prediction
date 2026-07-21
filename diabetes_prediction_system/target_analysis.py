@@ -53,4 +53,21 @@ class Target_Analysis:
         plt.ylabel('count')
         plt.show()
         
-        return(count)
+    
+    def nonediabetes_by_age(self):
+        
+        nonedia = self.df[self.df["Outcome"] == 0]
+        age_group = pd.cut(
+            nonedia["Age"],
+            bins=[21,31,41,51,61,71,81],
+            labels=["21-30","31-40","41-50","51-60","61-70","71-80"])
+        
+        count_nonedia = nonedia.groupby(age_group, observed=False).size()
+        
+        plt.figure(figsize=(7,5))
+        sns.barplot(x=count_nonedia.index, y=count_nonedia.values, hue=count_nonedia.index,palette='viridis',legend=False )
+        plt.title("distribution of none-diabetes patients by Age")
+        plt.xlabel("age")
+        plt.ylabel("count")
+        plt.show()
+        
