@@ -56,11 +56,12 @@ The following preprocessing techniques were applied:
 ## 📊 Exploratory Data Analysis
 
 Performed:
-    Data Cleaning
-          - Data-Type correction
-          - Handling Missing Values
-          - Outlier Detection
-          - Filling missing values using KNN imputation
+    
+Data Cleaning:
+    - Data-Type correction
+    - Handling Missing Values
+    - Outlier Detection
+    - Filling missing values using KNN imputation
   
   - Basic Data Insepction
   - Univariate Analysis
