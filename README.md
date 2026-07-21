@@ -58,18 +58,24 @@ The following preprocessing techniques were applied:
 Performed:
 
 
-- Univariate Analysis/Data Distribution
+- Univariate Analysis
+Histograms were used to examine the distribution of each numerical feature.
 
+### Insights
+- Most medical attributes show skewed distributions.
+- Features such as **Insulin** and **SkinThickness** contain many zero values, indicating missing or unavailable measurements.
+- **Glucose** and **BMI** show wider value ranges compared to other features
+  
   
 ![Age distribution](diabetes_prediction_system/visualization/data_distribution/age_histo.png)
 
 
 
-
-- Bivariate Analysis
+- density by outcome
+- Kernel Density Estimation (KDE) plots were used to compare feature distributions for diabetic and non-diabetic patients.
 
   
-![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
+![Insulin distribution density by outcome](diabetes_prediction_system/visualization/density_by_outcome/insulin_distribution_density_by_outcome.png)
 
 
 
@@ -80,9 +86,41 @@ Performed:
 
 
 
-- density by outcome
+
+- Bivariate Analysis
+- Scatter plots were created to understand relationships between pairs of features.
+
+### Insights
+- Higher glucose values generally correspond to higher BMI values.
+- Blood Pressure and BMI exhibit a weak positive relationship.
+- No strong linear relationship exists among most feature pairs, indicating that multiple variables contribute to diabetes prediction.
+
+
   
-![Insulin distribution density by outcome](diabetes_prediction_system/visualization/density_by_outcome/insulin_distribution_density_by_outcome.png)
+![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
+
+
+- Multivariate Analysis
+
+Multivariate scatter plots were used to analyze interactions among multiple features simultaneously.
+
+### Insights
+- The combination of **Glucose**, **BMI**, and **Age** provides better separation between diabetic and non-diabetic patients.
+- Diabetes prediction depends on multiple interacting medical attributes rather than a single feature.
+
+
+![Combination of Glucose, BMI, Age](diabetes_prediction_system/visualization/multivariate/glucose_bmi_age.png)
+
+
+## 🔍 Key Findings
+
+- The dataset contains several zero values that represent missing medical measurements.
+- Glucose is the strongest indicator of diabetes.
+- BMI and Age also contribute significantly to prediction.
+- Most features are not normally distributed.
+- Relationships between variables are generally weak to moderate, making machine learning models more suitable than simple linear rules.
+- Exploratory Data Analysis guided the preprocessing steps, including handling missing values, feature scaling, and model selection.
+
 
 
 ## 🤖 Machine Learning Models Used
