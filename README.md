@@ -57,7 +57,10 @@ The following preprocessing techniques were applied:
 
 Performed:
 
-- Distribution Analysis
+ **Distribution Analysis**
+- 
+![Age Distribution](visualizations/data_distribution/age_histo.png)
+
 - Boxplots
 - Histograms
 - Missing Value Analysis
@@ -147,17 +150,31 @@ diabetes_prediction_system/
 │
 ├── dataset/
 │   └── diabetes_cleanned_data_set.csv  
-    └── diabetes_interim_1.csv            # stage - 1
-    └── diabetes_interim_2.csv            # stage - 2
-    └── diabetes.csv                      # raw data  
-│
-├── notebooks/
-│   └── diabetes_prediction.ipynb
+│   └── diabetes_interim_1.csv            # stage - 1
+│   └── diabetes_interim_2.csv            # stage - 2
+│   └── diabetes.csv                      # raw data  
 │
 ├── predict_diabetes/
 │   ├── predict_diabetes.py
 │   └── config.py
 │
+├──visualization/
+│   └── bivariate
+│   └── data distribution
+│   └── density by outcome
+│   └── multivariate
+│   └── target analysis
+│    
+├──EDA.ipynb  - notebook
+├── data_cleaning.ipynb - notebook
+
+│
+├── data_cleaning.py
+├── basic_inspection
+├── biavariate analysis
+├── multivariate analysis
+├── target analysis
+│  
 ├── requirements.txt
 ├── README.md
 └── .gitignore
