@@ -57,13 +57,33 @@ The following preprocessing techniques were applied:
 
 Performed:
 
-- Distribution Analysis
-- Boxplots
-- Histograms
-- Missing Value Analysis
-- Outlier Analysis
 
----
+- Univariate Analysis/Data Distribution
+
+  
+![Age distribution](diabetes_prediction_system/visualization/data_distribution/age_histo.png)
+
+
+
+
+- Bivariate Analysis
+
+  
+![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
+
+
+
+- Target Analysis
+
+  
+![diabetes patients by Age](diabetes_prediction_system/visualization/target_analysis/distribution_of_diabetes_patients_by_Age.png)
+
+
+
+- density by outcome
+  
+![Insulin distribution density by outcome](diabetes_prediction_system/visualization/density_by_outcome/insulin_distribution_density_by_outcome.png)
+
 
 ## 🤖 Machine Learning Models Used
 
@@ -147,17 +167,31 @@ diabetes_prediction_system/
 │
 ├── dataset/
 │   └── diabetes_cleanned_data_set.csv  
-    └── diabetes_interim_1.csv            # stage - 1
-    └── diabetes_interim_2.csv            # stage - 2
-    └── diabetes.csv                      # raw data  
-│
-├── notebooks/
-│   └── diabetes_prediction.ipynb
+│   └── diabetes_interim_1.csv            # stage - 1
+│   └── diabetes_interim_2.csv            # stage - 2
+│   └── diabetes.csv                      # raw data  
 │
 ├── predict_diabetes/
 │   ├── predict_diabetes.py
 │   └── config.py
 │
+├──visualization/
+│   └── bivariate
+│   └── data distribution
+│   └── density by outcome
+│   └── multivariate
+│   └── target analysis
+│    
+├──EDA.ipynb  - notebook
+├── data_cleaning.ipynb - notebook
+
+│
+├── data_cleaning.py
+├── basic_inspection
+├── biavariate analysis
+├── multivariate analysis
+├── target analysis
+│  
 ├── requirements.txt
 ├── README.md
 └── .gitignore
