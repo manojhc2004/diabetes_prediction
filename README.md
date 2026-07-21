@@ -242,6 +242,7 @@ diabetes_prediction_system/
 │   └── data distribution
 │   └── density by outcome
 │   └── multivariate
+│   └── outliers
 │   └── target analysis
 │    
 ├──EDA.ipynb  - notebook
