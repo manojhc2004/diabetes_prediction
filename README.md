@@ -55,22 +55,25 @@ The following preprocessing techniques were applied:
 
 ## 📊 Exploratory Data Analysis
 
-Performed:
+Performed the following Exploratory Data Analysis (EDA) steps:
 
-    
-Data Cleaning:
-        - Data-Type correction
-        - Handling Missing Values
-        - Outlier Detection
-        - Filling missing values using KNN imputation
+- **Data Cleaning**
+  - Data type correction
+  - Handling missing values
+  - Outlier detection
+  - Filling missing values using KNN Imputer
+
+- **Basic Data Inspection**
+
+- **Univariate Analysis**
+
+- **Target Analysis**
+
+- **Bivariate Analysis**
+
+- **Multivariate Analysis**
 
   
-  - Basic Data Insepction
-  - Univariate Analysis
-  - Target Analysis
-  - Bivariate Analysis
-  - Multivariate Analysis
-
 
 ### Univariate Analysis
 Histograms were used to examine the distribution of each numerical feature.
