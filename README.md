@@ -2,9 +2,16 @@
 
 ## 📌 Project Overview
 
-This project predicts whether a patient is likely to have diabetes using Machine Learning. The model is trained on the Pima Indians Diabetes Dataset and compares multiple classification algorithms to identify the best-performing model.
+Diabetes is one of the most common chronic diseases worldwide. Early detection plays a crucial role in preventing serious health complications and enabling timely medical intervention. However, manually assessing diabetes risk based on multiple medical attributes can be challenging and time-consuming.
 
-The final deployed model is a **Random Forest Classifier** selected after extensive experimentation and hyperparameter tuning.
+### 💡 Solution
+
+This project develops a Machine Learning-based diabetes prediction system using the **Pima Indians Diabetes Dataset**. The system analyzes key medical features such as **Glucose, BMI, Blood Pressure, Insulin, Age, Skin Thickness, Pregnancies, and Diabetes Pedigree Function** to predict whether a patient is likely to have diabetes.
+
+Multiple classification algorithms were trained, evaluated, and compared using various performance metrics. After extensive experimentation, hyperparameter tuning, and model evaluation, the **Random Forest Classifier** was selected as the final model due to its superior predictive performance and generalization ability.
+
+The final solution provides a fast and reliable prediction that can assist healthcare professionals in identifying high-risk patients and support early diagnosis.
+
 
 ---
 
