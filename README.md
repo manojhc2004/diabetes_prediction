@@ -58,7 +58,7 @@ The following preprocessing techniques were applied:
 Performed:
 
 
-- Univariate Analysis
+### Univariate Analysis
 Histograms were used to examine the distribution of each numerical feature.
 
 ### Insights
@@ -71,7 +71,7 @@ Histograms were used to examine the distribution of each numerical feature.
 
 
 
-- density by outcome
+### density by outcome
 - Kernel Density Estimation (KDE) plots were used to compare feature distributions for diabetic and non-diabetic patients.
 
   
@@ -79,7 +79,7 @@ Histograms were used to examine the distribution of each numerical feature.
 
 
 
-- Target Analysis
+### Target Analysis
 
   
 ![diabetes patients by Age](diabetes_prediction_system/visualization/target_analysis/distribution_of_diabetes_patients_by_Age.png)
@@ -87,7 +87,7 @@ Histograms were used to examine the distribution of each numerical feature.
 
 
 
-- Bivariate Analysis
+### Bivariate Analysis
 - Scatter plots were created to understand relationships between pairs of features.
 
 ### Insights
@@ -100,7 +100,7 @@ Histograms were used to examine the distribution of each numerical feature.
 ![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
 
 
-- Multivariate Analysis
+### Multivariate Analysis
 
 Multivariate scatter plots were used to analyze interactions among multiple features simultaneously.
 
