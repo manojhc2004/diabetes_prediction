@@ -71,6 +71,7 @@ Histograms were used to examine the distribution of each numerical feature.
 
 
 
+
 ### density by outcome
 - Kernel Density Estimation (KDE) plots were used to compare feature distributions for diabetic and non-diabetic patients.
 
@@ -79,10 +80,14 @@ Histograms were used to examine the distribution of each numerical feature.
 
 
 
+
+
 ### Target Analysis
 
   
 ![diabetes patients by Age](diabetes_prediction_system/visualization/target_analysis/distribution_of_diabetes_patients_by_Age.png)
+
+
 
 
 
@@ -98,6 +103,8 @@ Histograms were used to examine the distribution of each numerical feature.
 
   
 ![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
+
+
 
 
 ### Multivariate Analysis
