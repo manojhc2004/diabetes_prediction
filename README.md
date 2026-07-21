@@ -65,16 +65,21 @@ Performed:
 
 
 - Bivariate Analysis
+
+  
 ![Glucose Vs Insulin](diabetes_prediction_system/visualization/bivariate/insulin_vs_glucose.png)
 
 
 
 - Target Analysis
+
+  
 ![diabetes patients by Age](diabetes_prediction_system/visualization/target_analysis/distribution_of_diabetes_patients_by_Age.png)
 
 
 
 - density by outcome
+  
 ![Insulin distribution density by outcome](diabetes_prediction_system/visualization/density_by_outcome/insulin_distribution_density_by_outcome.png)
 
 
